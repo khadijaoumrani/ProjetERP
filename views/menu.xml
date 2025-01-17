@@ -1,0 +1,15 @@
+<odoo>
+    <!-- Define the action for the menu -->
+    <record id="employee_absence_management_action" model="ir.actions.act_window">
+        <field name="name">Etudiant Absence Management</field>
+        <field name="res_model">etudiant.absence</field>
+        <field name="view_mode">tree,form</field>
+        <field name="target">current</field>
+    </record>
+
+    <!-- Menu for Employee Absences -->
+    <menuitem id="etudiant_absence_management_menu"
+              name="EtudiantAbsences"
+              parent="hr.menu_hr_root"
+              action="etudiant_absence_management_action"/>
+</odoo>

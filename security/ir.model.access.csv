@@ -1,0 +1,6 @@
+
+
+
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_absence_etudiant_manager, gestion. absence.etudiant.manager, model_gestion_absence_etudiant, base.group_user,1,1,1,1
+access_absence_etudiant, gestion.absence.etudiant, model_gestion_absence_etudiant,base.group_user,1,0,0,0

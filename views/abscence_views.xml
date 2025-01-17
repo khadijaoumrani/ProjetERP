@@ -1,0 +1,39 @@
+<odoo>
+    <!-- Absence Form View -->
+    <record id="view_absence_form" model="ir.ui.view">
+        <field name="name">absence.form</field>
+        <field name="model">etudiant.absence</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="etudiant_id"/>
+                        <field name="start_date"/>
+                        <field name="end_date"/>
+                        <field name="absence_type"/>
+                        <field name="reason"/>
+                    </group>              
+                    <button string="Submit" type="object" name="action_submit"/>
+                    <button string="Approve" type="object" name="action_approve"/>                           
+                    <button string="Reject" type="object" name="action_reject"/>                                           
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Absence Tree View -->
+    <record id="view_absence_tree" model="ir.ui.view">
+        <field name="name">absence.tree</field>
+        <field name="model">etudiant.absence</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="etudiant_id"/>
+                <field name="start_date"/>
+                <field name="end_date"/>
+                <field name="absence_type"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Menu for Absence Requests -->
+</odoo>
